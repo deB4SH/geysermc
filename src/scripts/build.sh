@@ -24,5 +24,5 @@ echo "Building image with tag $TAG"
 
 docker \
     build . \
-    -f ../src/docker/Dockerfile \
+    -f ../docker/Dockerfile \
     -t $(echo "$REGISTRY/geysermc:$TAG")
